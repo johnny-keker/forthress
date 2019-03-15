@@ -1,1 +1,1 @@
-: parity 2 % if ." false" else ." true" ;
+: parity 2 % if 0 else 1 ;

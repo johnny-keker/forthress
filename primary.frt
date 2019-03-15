@@ -19,4 +19,9 @@ dup 1 = if drop drop 0 else
         = ( 1 num i+1 res )
     until ( 1 num i+1 )
     drop drop ( 1 )
-endif endif ;
+endif endif
+1 allot ( res address )
+dup ( res addres address )
+rot swap ( addres res address )
+!
+;
