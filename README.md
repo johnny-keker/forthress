@@ -1,4 +1,7 @@
 # Forthress
+## First Task
+[Source code](https://github.com/johnny-keker/forthress/blob/master/first_task.frt)
+Parity, primary checking, string concatenation and Collatz sequence
 
 ## Summary
 
