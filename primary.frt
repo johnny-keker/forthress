@@ -39,3 +39,14 @@ swap ( address_res+len1 address2 )
 string-copy
 r>
 ;
+
+: collatz ( num -- )
+repeat
+    dup 2 % not if
+        dup 2 /
+    else
+        dup 3 * 1 +
+    endif
+    dup 1 =
+until ;
+;
