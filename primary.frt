@@ -23,5 +23,19 @@ endif endif
 1 allot ( res address )
 dup ( res addres address )
 rot swap ( addres res address )
-!
+! ;
+
+: concate ( address2 address1 -- address )
+swap
+over over ( address2 address1 address2 address1 )
+count ( address2 address1 address2 len1 )
+swap ( address2 address1 len1 address2 )
+count ( address2 address1 len1 len2 )
+1 + + allot dup >r swap ( address2 address_res address1 )
+over over
+string-copy
+count +  ( address2 address_res+len1 )
+swap ( address_res+len1 address2 )
+string-copy
+r>
 ;
