@@ -1,3 +1,5 @@
+: parity 2 % if 0 else 1 endif ; 
+
 : primary
 1 swap ( 1 num )
 dup 2 = if drop else
